@@ -1,0 +1,42 @@
+POST http://localhost:8080/message/publish/default
+Content-Type: application/json
+
+{
+  "content": "Hello, default exchange!"
+}
+
+###
+
+POST http://localhost:8080/message/publish/direct
+Content-Type: application/json
+
+{
+  "content": "Hello, direct exchange!"
+}
+
+###
+
+POST http://localhost:8080/message/publish/fanout
+Content-Type: application/json
+
+{
+  "content": "Hello, fanout exchange!"
+}
+
+###
+
+POST http://localhost:8080/message/publish/topic/one
+Content-Type: application/json
+
+{
+  "content": "Hello, topic exchange!"
+}
+
+###
+
+POST http://localhost:8080/message/publish/headers/one
+Content-Type: application/json
+
+{
+  "content": "Hello, headers exchange!"
+}

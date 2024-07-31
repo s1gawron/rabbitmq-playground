@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: rabbitmq-playground
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+rabbitmq:
+  exchanges:
+    direct: direct.exchange
+    fanout: fanout.exchange
+    topic: topic.exchange
+    headers: headers.exchange
+  queues:
+    default: default.queue
+    direct: direct.queue
+    fanoutOne: fanoutOne.queue
+    fanoutTwo: fanoutTwo.queue
+    fanoutThree: fanoutThree.queue
+    topicOne: topicOne.queue
+    topicTwo: topicTwo.queue
+    topicAll: topicAll.queue
+    headersOne: headersOne.queue
+    headersTwo: headersTwo.queue
+  routing-keys:
+    direct: direct.routing-key
+    topicOne: topic.routing-key.one
+    topicTwo: topic.routing-key.two
+    topicAll: topic.routing-key.*
+  headers:
+    defaultName: header
